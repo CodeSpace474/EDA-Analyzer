@@ -23,5 +23,35 @@ Exports a full technical report including tables, charts, and AI-based recommend
 4. It is recommended to use a virtual environment.
 5. CMD -> pip install -r requirements.txt
 ## 🚀 How to Use
-Method 1: CMD -> streamlit run EDA_Analyzer.py
-Method 2: If you are on Windows, you can use the EDA_Launcher.py to start the server and open your browser automatically.Note: Open EDA_Launcher.py and ensure the PYTHON_PATH variable matches your local Python installation path.📂 Project StructureEDA_Analyzer.py: The main application logic (UI, Data Processing, AutoML).EDA_Launcher.py: A helper script for silent startup and browser automation.requirements.txt: List of required Python libraries.OUTPUT_YYYYMMDD_HHMMSS/: (Auto-generated) Each run creates a unique folder containing your plots, the trained model.pkl, and the final EDA_REPORT.docx.📊 Technical OverviewThe pipeline follows a standard data science lifecycle:Data Ingestion: Upload CSV via Streamlit.Statistical Analysis: Calculation of Skewness, Kurtosis, and Cardinality.Visualization: Seaborn and Matplotlib used for statistical plotting.Model Selection: Scikit-Learn Pipeline and ColumnTransformer for robust cross-validation.Interpretation: Permutation Importance and SHAP summary plots for model transparency.📝 RequirementsPython 3.11+StreamlitPandas & NumPyScikit-LearnSHAPPython-DocxJoblib🤝 ContributingFeel free to fork this project, open issues, or submit pull requests to improve the AutoML logic or reporting templates!
+### Method 1
+CMD -> streamlit run EDA_Analyzer.py
+### Method 2
+If you are on Windows, you can use the EDA_Launcher.py to start the server and open your browser automatically.
+### Note: Open EDA_Launcher.py and ensure the PYTHON_PATH variable matches your local Python installation path.
+## 📂 Project Structure
+1. EDA_Analyzer.py: The main application logic (UI, Data Processing, AutoML).
+2. EDA_Launcher.py: A helper script for silent startup and browser automation.
+3. OUTPUT_YYYYMMDD_HHMMSS/: (Auto-generated) Each run creates a unique folder containing your plots, the trained model.pkl, and the final EDA_REPORT.docx.
+## 📊 Technical Overview
+The pipeline follows a standard data science lifecycle:
+### Data Ingestion
+Upload CSV via Streamlit
+### Statistical Analysis
+Calculation of Skewness, Kurtosis, and Cardinality
+### Visualization
+Seaborn and Matplotlib used for statistical plotting.
+### Model Selection
+Scikit-Learn Pipeline and ColumnTransformer for robust cross-validation
+### Interpretation
+Permutation Importance and SHAP summary plots for model transparency.
+## 📝 Requirements
+Python 3.11+
+Streamlit
+Pandas
+NumPy
+Scikit-Learn
+SHAP
+Python-Docx
+Joblib
+## 🤝 Contributing
+Feel free to fork this project, open issues, or submit pull requests to improve the AutoML logic or reporting templates!
